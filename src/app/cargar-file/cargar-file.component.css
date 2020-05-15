@@ -1,0 +1,70 @@
+.container {
+    margin: auto;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+#bookForm {
+    margin-top: 30px;
+    align-items: center;
+    display: block;
+    justify-content: center;
+    padding: 100px;
+}
+
+#bookForm input {
+    display: none;
+}
+
+#bookForm label {
+    background-color: rgba(7, 126, 126, 0.9);
+    border-radius: 25px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 200;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 20px;
+}
+
+#bookTable {
+    border-collapse: collapse;
+    border: 2px solid rgba(46, 66, 66, 0.9);
+}
+
+#bookTable td,
+th {
+    color: #444;
+    font-size: 15px;
+    padding: 15px 15px;
+    width: initial;
+    border: 2px solid rgba(46, 66, 66, 0.9);
+}
+
+#bookTable thead th {
+    background-color: #e4e1e1;
+    color: rgba(7, 126, 126, 0.9);
+    border: 2px solid rgba(46, 66, 66, 0.9);
+}
+
+#bookTable tbody {
+    text-align: center;
+    padding: 10px;
+}
+
+#bookTable tbody tr:not(:last-child) {
+    border-bottom: 1px solid rgba(46, 66, 66, 0.9);
+}
+
+#bookTable tbody td:not(:last-child) {
+    border-right: 1px solid rgba(46, 66, 66, 0.9);
+}

@@ -1,0 +1,41 @@
+<div id="bookForm">
+    <input id="books" type="file" onChange="loadDoc(event)">
+    <label for="books">Cargar archivo</label>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-9">
+            <table id="bookTable">
+                <thead>
+                    <tr>
+                        <th style="text-align: center">Folio</th>
+                        <th style="text-align: center">Nombre Receptor</th>
+                        <th style="text-align: center">RFC</th>
+                        <th style="text-align: center">Fecha</th>
+                        <th style="text-align: center">Subtotal</th>
+                        <th style="text-align: center">Iva</th>
+                        <th style="text-align: center">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-2" style="margin-left: 5rem;">
+            <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                <div class="card-header" style="text-align: center">Total IVA</div>
+                <div class="card-body">
+                    <h6 id="tf" class="card-title" style="text-align: right"></h6>
+                    <!--p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</-p-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <input type="submit" class="btn--blue btn--add" value="Agregar">
+</div>
