@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { CargarFileComponent } from './cargar-file/cargar-file.component';
 import { HeaderComponent } from './header/header.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
 
 const routes: Routes = [
   {path: '', component: HomeComponent },
@@ -37,6 +38,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     BrowserModule,
     BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent],

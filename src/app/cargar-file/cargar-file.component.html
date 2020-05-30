@@ -1,41 +1,102 @@
-<div id="bookForm">
-    <input id="books" type="file" onChange="loadDoc(event)">
-    <label for="books">Cargar archivo</label>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-9">
-            <table id="bookTable">
-                <thead>
-                    <tr>
-                        <th style="text-align: center">Folio</th>
-                        <th style="text-align: center">Nombre Receptor</th>
-                        <th style="text-align: center">RFC</th>
-                        <th style="text-align: center">Fecha</th>
-                        <th style="text-align: center">Subtotal</th>
-                        <th style="text-align: center">Iva</th>
-                        <th style="text-align: center">Total</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="col-2" style="margin-left: 5rem;">
-            <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
-                <div class="card-header" style="text-align: center">Total IVA</div>
-                <div class="card-body">
-                    <h6 id="tf" class="card-title" style="text-align: right"></h6>
-                    <!--p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</-p-->
+<div class="container-fluid">
+    <div class="row align-items-center">
+        <div class="col-8">
+            <div class="row align-items-center">
+                <div class="col">
+                    <h5 style="font-weight: bold;">Proveedores</h5>
+                </div>
+                <div class="col">
+                    <div id="bookForm">
+                        <input id="books" type="file" onChange="loadDoc(event)">
+                        <label for="books"><img src="../../assets/images/upload.png" style="width: 25px; height: 25px;">  Cargar factura</label>
+                    </div>
                 </div>
             </div>
+            <div class="row" style="height: 250px; overflow-y: scroll;">
+                <table id="bookTable" style="margin-top: 1;">
+                    <thead>
+                        <tr>
+                            <th style="text-align: center">Folio</th>
+                            <th style="text-align: center">Nombre Receptor</th>
+                            <th style="text-align: center">RFC</th>
+                            <th style="text-align: center">Fecha</th>
+                            <th style="text-align: center">Subtotal</th>
+                            <th style="text-align: center">Iva</th>
+                            <th style="text-align: center">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row align-items-center" style="padding-top: 20px;">
+                <div class="col">
+                    <h5 style="font-weight: bold;">Acreedores</h5>
+                </div>
+                <div class="col">
+                    <div id="bookForm">
+                        <input id="books2" type="file" onChange="loadDocs(event)">
+                        <label for="books2"><img src="../../assets/images/upload.png" style="width: 25px; height: 25px;">  Cargar factura</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style=" height: 250px; overflow-y: scroll;">
+                <table id="bookTables">
+                    <thead>
+                        <tr>
+                            <th style="text-align: center">Folio</th>
+                            <th style="text-align: center">Nombre Emisor</th>
+                            <th style="text-align: center">RFC</th>
+                            <th style="text-align: center">Fecha</th>
+                            <th style="text-align: center">Subtotal</th>
+                            <th style="text-align: center">Iva</th>
+                            <th style="text-align: center">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodys">
+                        <tr>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+        <div class="col-2" style="margin: auto;">
+            <div class="row align-items-center">
+                <div class="col">
+                    <div class="card text-white bg-secondary mb-3" style="max-width: 18rem; font-family: Montserrat;">
+                        <div class="card-header" style="text-align: center; font-family: Montserrat; font-size: 15px; padding: 5px;">Total IVA Proveedores</div>
+                        <tr id="div" class="table-secondary">
+                            <label id="tf" class="card-title" style="text-align: center; color: black; font-family: Montserrat; margin: auto;"></label>
+                        </tr>
+                    </div>
+                </div>
+                <div class="col"></div>
+                <div class="col">
+                    <div class="card text-white bg-secondary mb-3" style="max-width: 18rem; font-family: Montserrat;">
+                        <div class="card-header" style="text-align: center; font-family: Montserrat; font-size: 15px; padding: 5px;">Total IVA Acredores</div>
+                        <tr id="div2" class="table-secondary">
+                            <label id="tf2" class="card-title" style="text-align: right; color: black; font-family: Montserrat; margin: auto;"></label>
+                        </tr>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="card text-white bg-secondary mb-3" style="max-width: 18rem; font-family: Montserrat;">
+                    <div class="card-header" style="text-align: center; font-family: Montserrat;  font-weight: bold; padding: 5px;">Total </div>
+                    <tr id="div3" class="table-secondary">
+                        <label id="tf3" class="card-title" style="text-align: right; color: black; font-family: Montserrat; margin: auto;  font-weight: bold;"></label>
+                    </tr>
+                </div>
+            </div>
+            <!--div>
+                <button id="btn" type="button" class="btn btn-outline-info" onclick="sumar()">Calcular Total</button>
+            </div-->
         </div>
     </div>
-</div>
-
-<div>
-    <input type="submit" class="btn--blue btn--add" value="Agregar">
 </div>

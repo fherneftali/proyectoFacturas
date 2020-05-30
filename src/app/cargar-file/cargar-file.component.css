@@ -1,5 +1,22 @@
-.container {
+.container-fluid {
+    margin: 80px auto;
+    padding: 10px;
+}
+
+.col {
     margin: auto;
+    font-family: "Montserrat";
+}
+
+.row {
+    text-align: center;
+}
+
+#btn {
+    border-radius: 25px;
+    font-family: "Montserrat";
+    text-align: center;
+    padding: 0 10px;
 }
 
 *,
@@ -11,11 +28,10 @@
 }
 
 #bookForm {
-    margin-top: 30px;
     align-items: center;
     display: block;
     justify-content: center;
-    padding: 100px;
+    padding: 10px;
 }
 
 #bookForm input {
@@ -39,6 +55,7 @@
 #bookTable {
     border-collapse: collapse;
     border: 2px solid rgba(46, 66, 66, 0.9);
+    width: 1000px;
 }
 
 #bookTable td,
@@ -48,6 +65,7 @@ th {
     padding: 15px 15px;
     width: initial;
     border: 2px solid rgba(46, 66, 66, 0.9);
+    font-family: "Montserrat";
 }
 
 #bookTable thead th {
@@ -58,13 +76,53 @@ th {
 
 #bookTable tbody {
     text-align: center;
-    padding: 10px;
+    font-family: "Montserrat";
 }
 
 #bookTable tbody tr:not(:last-child) {
     border-bottom: 1px solid rgba(46, 66, 66, 0.9);
+    font-family: "Montserrat";
 }
 
 #bookTable tbody td:not(:last-child) {
+    border-right: 1px solid rgba(46, 66, 66, 0.9);
+}
+
+
+/*Tabla 2*/
+
+#bookTables {
+    border-collapse: collapse;
+    border: 2px solid rgba(46, 66, 66, 0.9);
+    width: 1000px;
+}
+
+#bookTables td,
+th {
+    color: #444;
+    font-size: 15px;
+    padding: 15px 15px;
+    width: initial;
+    border: 2px solid rgba(46, 66, 66, 0.9);
+    font-family: "Montserrat";
+}
+
+#bookTables thead th {
+    background-color: #e4e1e1;
+    color: rgba(7, 126, 126, 0.9);
+    border: 2px solid rgba(46, 66, 66, 0.9);
+}
+
+#bookTables tbody {
+    text-align: center;
+    font-family: "Montserrat";
+}
+
+#bookTables tbody tr:not(:last-child) {
+    border-bottom: 1px solid rgba(46, 66, 66, 0.9);
+    font-family: "Montserrat";
+}
+
+#bookTables tbody td:not(:last-child) {
     border-right: 1px solid rgba(46, 66, 66, 0.9);
 }
